@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-950: #051205;
+  --color-forest-900: #0a1f0a;
+  --color-forest-800: #143314;
+  --color-forest-700: #1e4d1e;
+  --color-tactical-green: #2d5a27;
+  --color-tactical-accent: #4ade80;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: var(--color-forest-950);
+  --ink: #ffffff;
+  --accent: var(--color-tactical-accent);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.tactical-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(74, 222, 128, 0.05) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+}
+
+.glass-panel {
+  background: rgba(10, 31, 10, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(74, 222, 128, 0.1);
+}
